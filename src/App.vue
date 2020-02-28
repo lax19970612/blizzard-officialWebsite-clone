@@ -2,7 +2,7 @@
 #app
   Header
   Carousel
-  Pane
+  GameList
   Pane
   Pane
   Footer
@@ -14,6 +14,7 @@ import 'animate.css'
 
 import Header from './views/Header'
 import Carousel from './views/Carousel'
+import GameList from './views/GameList'
 import Footer from './views/Footer'
 import Pane from './views/Pane'
 
@@ -22,6 +23,7 @@ export default {
   components: {
     Header,
     Carousel,
+    GameList,
     Footer,
     Pane
   }
@@ -29,4 +31,12 @@ export default {
 </script>
 
 <style>
+body {
+  box-sizing: border-box;
+  background-color: #002650;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 2px;
+}
 </style>

@@ -1,16 +1,11 @@
 <template lang='pug'>
-  div {{ text }}
+  div {{ buttonData }}
 </template>
 
 <script>
 export default {
-  name: 'HomeButton',
-  props: { buttonData: String },
-  data () {
-    return {
-      text: this.buttonData
-    }
-  }
+  name: 'HomeSmallButton',
+  props: { buttonData: String }
 }
 </script>
 
@@ -19,9 +14,9 @@ div {
   border: 1px solid #00aeff;
   background-color: #0e86ca;
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
-  padding: 10px 50px;
+  padding: 7px 42px;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
