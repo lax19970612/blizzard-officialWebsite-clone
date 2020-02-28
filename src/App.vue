@@ -10,6 +10,7 @@
 
 <script>
 import '@/assets/css/reset.css'
+import 'animate.css'
 
 import Header from './views/Header'
 import Carousel from './views/Carousel'
