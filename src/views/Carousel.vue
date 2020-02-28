@@ -6,10 +6,7 @@ div#Carousel-container
     div.carousel-inner
       div(v-for='(image, index) in ImageList' :class='index === 0 ? "carousel-item active" : "carousel-item" ')
         img(class='d-block w-100' :style="{backgroundImage: 'url(' + image + ')' }")
-        div.carousel-caption
-          img(class='animated bounceInRight fast' :src='GameLogoList[index]')
-          h3(class='animated bounceInRight fast') {{ CaptionTitle[index] }}
-          div(class='button animated bounceInRight fast') {{ ButtonText[index] }}
+        CarouselCaption(:imgSrc='GameLogoList[index]' :captionTitle='CaptionTitle[index]' :ButtonText='ButtonText[index]')
     a(class='carousel-control-prev' href='#Carousel-body' role='button' data-slide='prev')
       span.carousel-control-prev-icon
     a(class='carousel-control-next' href='#Carousel-body' role='button' data-slide='next')
@@ -17,6 +14,8 @@ div#Carousel-container
 </template>
 
 <script>
+import CarouselCaption from '@/components/CarouselCaption'
+
 const ImageList = [require('../assets/image/carousel/slides1.png'),
   require('../assets/image/carousel/slides2.jpg'),
   require('../assets/image/carousel/slides3.jpg'),
@@ -36,6 +35,9 @@ const ButtonText = ['了解詳情', '購買決勝時刻點數', '立即購買', 
 
 export default {
   name: 'Carousel',
+  components: {
+    CarouselCaption
+  },
   data () {
     return {
       ImageList: ImageList,
@@ -67,40 +69,5 @@ export default {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: auto 100vh;
-}
-
-.carousel-caption {
-  right: auto;
-  bottom: auto;
-  top: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-direction: column;
-  height: 100%;
-  padding: 100px 0;
-}
-
-.carousel-caption > img {
-  width: 260px;
-  height: auto;
-}
-
-.carousel-caption > h3 {
-  font-size: 68.67px;
-  animation-delay: 0.5s;
-}
-
-.carousel-caption > .button {
-  border: 1px solid #00aeff;
-  background-color: #0e86ca;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 400;
-  padding: 10px 50px;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  animation-delay: 1s;
 }
 </style>
