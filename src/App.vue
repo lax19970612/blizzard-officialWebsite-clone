@@ -39,6 +39,5 @@ body {
   color: #fff;
   font-size: 16px;
   line-height: 1.7;
-  letter-spacing: 2px;
 }
 </style>
