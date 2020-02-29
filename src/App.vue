@@ -3,7 +3,7 @@
   Header
   Carousel
   GameList
-  Pane
+  News
   Pane
   Footer
 </template>
@@ -15,6 +15,7 @@ import 'animate.css'
 import Header from './views/Header'
 import Carousel from './views/Carousel'
 import GameList from './views/GameList'
+import News from './views/News'
 import Footer from './views/Footer'
 import Pane from './views/Pane'
 
@@ -24,6 +25,7 @@ export default {
     Header,
     Carousel,
     GameList,
+    News,
     Footer,
     Pane
   }

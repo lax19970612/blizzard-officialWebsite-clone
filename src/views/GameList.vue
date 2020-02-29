@@ -122,7 +122,7 @@ export default {
 
 <style scoped>
 #gameListContent {
-  padding: 10vh 0;
+  padding-top: 10vh;
   background-image: url('~@/assets/image/background/gameList.jpg');
   background-size: cover;
 }
