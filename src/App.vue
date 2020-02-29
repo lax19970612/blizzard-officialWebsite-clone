@@ -4,7 +4,7 @@
   Carousel
   GameList
   News
-  Pane
+  CareerPane
   Footer
 </template>
 
@@ -16,8 +16,8 @@ import Header from './views/Header'
 import Carousel from './views/Carousel'
 import GameList from './views/GameList'
 import News from './views/News'
+import CareerPane from './views/CareerPane'
 import Footer from './views/Footer'
-import Pane from './views/Pane'
 
 export default {
   name: 'App',
@@ -26,8 +26,8 @@ export default {
     Carousel,
     GameList,
     News,
-    Footer,
-    Pane
+    CareerPane,
+    Footer
   }
 }
 </script>
