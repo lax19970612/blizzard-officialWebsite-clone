@@ -81,6 +81,7 @@ export default {
 }
 
 .paneContentTitle {
+  color: #fff;
   font-weight: 400;
   font-size: 43.94px;
 }
