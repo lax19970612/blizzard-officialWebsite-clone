@@ -18,4 +18,25 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Implement
+
+- Basic appearance
+  - Header
+  - Carousel Pane
+  - GameList Pane
+  - News Pane
+  - Career Pane
+  - Footer
+- Animation
+  - Carousel Pane: slides and caption part
+  - Career Pane: slides part
+
+
+## Not Implement
+
+- Appearance
+  - The dropdown of the header(gamelist, user)
+  - Language select in the footer
+- Animation
+  - Carousel Pane: only using fade animation, but original is fade and slide in
+- RWD
